@@ -20,12 +20,12 @@ const MobileNav = ()=>{
                         {user?.email}
                     </span>
                  ):(
-                    <span></span>
+                    <span> Welcome To Eatty. com !</span>
                  )}
                 </SheetTitle>
                 <Separator>
                     <SheetDescription className="flex flex-col gap-4">
-                        {isAuthenticated ? (<MobileNavLinks/> ):(  <Button onClick= {()=> loginWithRedirect}className="flex-1 font-bold bg-orange-500">Log In </Button>)}
+                        {isAuthenticated ? (<MobileNavLinks/> ):(  <Button onClick= {()=> loginWithRedirect()}className="flex-1 font-bold bg-orange-500">Log In </Button>)}
                        
                     </SheetDescription>
                 </Separator>
